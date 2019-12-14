@@ -1,0 +1,46 @@
+
+.container__todo-list {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: darksalmon;
+	padding: 10px;
+}
+
+h1 {
+	background-color: coral;
+}
+
+.todo__list {
+	list-style: none;
+	width: 100%;
+	padding: 0;
+}
+
+li {
+	margin: 10px;
+	border-bottom: 1px solid gray;
+	padding: 10px;
+	text-align: left;
+	font-size: 20px;
+}
+
+input {
+	margin: 0 5px;
+}
+
+
+label {
+	margin: 0 5px;
+}
+
+.todo-list__item.completed label {
+	text-decoration: line-through;
+	color: gray;
+}
+
+.todo-list__item.completed {
+	background-color: lightgray;
+}

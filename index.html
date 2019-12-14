@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>To Do List</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+	<main>
+		<div class='container__todo-list'>
+			<h1>Ваш список дел!</h1>
+			<ul class = 'todo__list'>
+				<li class='todo-list__item'>
+					<input type='checkbox' class='checkbox'>
+					<label class='todo-item__label'>Добавить своё первое дело!</label>
+					<input type='text' id='edit__input' class='edit__input' hidden>
+					<input type='button' class='edit__button' value='Редактировать'>
+					<input type='button' class='delete__button' value='Удалить'>
+				</li>
+			</ul>
+			<div>
+				<input type='text' class='add-todo-item'>
+				<input type='button' class='add-todo-item-button' value='Добавить'>
+				<input type='button' class='clear-all' value='Очистить всё'>
+			</div>
+		</div>
+	</main>
+
+	<script type="text/javascript" src="./app.js"></script>
+</body>
+
+</html>
