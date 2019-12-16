@@ -14,18 +14,24 @@
 
 	<main>
 		<div class='container__todo-list'>
-			<h1>Ваш список дел!</h1>
+			<h1>todo list</h1>
 			<ul class = 'todo__list'>
 				<li class='todo-list__item'>
-					<input type='checkbox' class='checkbox'>
-					<label class='todo-item__label'>Добавить своё первое дело!</label>
-					<input type='text' id='edit__input' class='edit__input' hidden>
-					<input type='button' class='edit__button' value='Редактировать'>
-					<input type='button' class='delete__button' value='Удалить'>
+					<div class='todoitem-container'>
+						<input type='checkbox' class='checkbox'>
+						<label class='todo-item__label'>Добавить своё первое дело!</label>
+						<input type='text' id='edit__input' class='edit__input' hidden>
+					</div>
+					<div class='buttons-container'>
+						<input type='button' class='edit__button' value='&#9998'>
+						<input type='button' class='delete__button' value='&#10007'>
+					</div>
 				</li>
 			</ul>
-			<div>
-				<input type='text' class='add-todo-item'>
+			<div class = 'add-input-container'>
+				<input type='checkbox' class='important-checkbox' id='important'>
+				<label for='important' class='important-label'>Пометить как важное</label>
+				<input type='text' class='add-todo-item' maxlength='45'>
 				<input type='button' class='add-todo-item-button' value='Добавить'>
 				<input type='button' class='clear-all' value='Очистить всё'>
 			</div>
